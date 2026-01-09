@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DisasterPulse</title>
+  <style>
+a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+    }
+
+    header {
+      background: #d32f2f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    #map {
+      height: 300px;
+      width: 100%;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DisasterPulse</h1>
+    <p>Real-time Disaster Alerts & Risk Visualization</p>
+  </header>
+
+  <section>
+    <div class="card">
+  <h3>Flood Alert</h3>
+  <p><strong>Location:</strong> Assam</p>
+  <p><strong>Severity:</strong> High</p>
+  <a href="https://www.google.com/maps/search/Assam+flood" target="_blank">
+    View affected area on map
+  </a>
+</div>
+
+
+<div class="card">
+  <h3>Cyclone Warning</h3>
+  <p><strong>Location:</strong> Odisha Coast</p>
+  <p><strong>Severity:</strong> Severe</p>
+  <a href="https://www.google.com/maps/search/Odisha+cyclone" target="_blank">
+    View affected area on map
+  </a>
+</div>
+
+<div class="card">
+  <h3>Heatwave Alert</h3>
+  <p><strong>Location:</strong> Rajasthan</p>
+  <p><strong>Severity:</strong> Moderate</p>
+  <a href="https://www.google.com/maps/search/Rajasthan+heatwave" target="_blank">
+    View affected area on map
+  </a>
+</div>
+
+<div class="card">
+  <h2>AI Advisory (Powered by Google Gemini)</h2>
+
+  <p><strong>Flood Alert – Assam</strong></p>
+  <p>
+    Heavy rainfall may lead to flooding in low-lying areas. 
+    Residents are advised to avoid unnecessary travel, keep emergency kits ready,
+    and follow official advisories.
+  </p>
+
+  <p><strong>Cyclone Warning – Odisha Coast</strong></p>
+  <p>
+    Strong winds and heavy rainfall are expected. Secure loose objects,
+    stay indoors, and follow evacuation instructions from local authorities.
+  </p>
+
+  <p><strong>Heatwave Alert – Rajasthan</strong></p>
+  <p>
+    Extremely high temperatures may cause heat-related illnesses.
+    Stay hydrated, avoid outdoor activity during peak hours,
+    and check on vulnerable individuals.
+  </p>
+
+  <p><em>
+    These advisories are generated using Google Gemini to simplify
+    official alerts into human-readable safety guidance.
+  </em></p>
+</div>
+
+
+   <div class="card">
+  <h2>Risk Map</h2>
+
+  <iframe
+    src="https://www.google.com/maps?q=India&output=embed"
+    width="100%"
+    height="300"
+    style="border:0; border-radius:6px;"
+    loading="lazy">
+  </iframe>
+
+  <p><em>Highlighted regions indicate active disaster risk zones.</em></p>
+</div>
+  </section>
+
+  <footer style="text-align:center; padding:15px; font-size:14px; color:#555;">
+  DisasterPulse • Built for Google TechSprint Hackathon by Team FourLoop
+</footer>
+
+</body>
+</html>
